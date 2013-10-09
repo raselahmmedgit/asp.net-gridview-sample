@@ -32,9 +32,9 @@
                     Basic Grid Bind By SqlDataSource</h2>
             </div>
             <div>
-                <asp:GridView ID="gvBasicBySqlDataSource" runat="server" BackColor="White" 
+                <%--<asp:GridView ID="gvBasicBySqlDataSource" runat="server" BackColor="White" 
                     BorderColor="White" BorderStyle="Ridge" BorderWidth="2px" CellPadding="3" 
-                    CellSpacing="1" GridLines="None">
+                    CellSpacing="1" GridLines="None" DataSourceID="ObjectDataSource1">
                     <FooterStyle BackColor="#C6C3C6" ForeColor="Black" />
                     <HeaderStyle BackColor="#4A3C8C" Font-Bold="True" ForeColor="#E7E7FF" />
                     <PagerStyle BackColor="#C6C3C6" ForeColor="Black" HorizontalAlign="Right" />
@@ -45,8 +45,12 @@
                     <SortedDescendingCellStyle BackColor="#CAC9C9" />
                     <SortedDescendingHeaderStyle BackColor="#33276A" />
                 </asp:GridView>
+                <asp:ObjectDataSource ID="ObjectDataSource1" runat="server">
+                </asp:ObjectDataSource>
+                <asp:EntityDataSource ID="EntityDataSource1" runat="server">
+                </asp:EntityDataSource>--%>
             </div>
         </div>
-        <asp:SqlDataSource ID="SqlDataSource1" runat="server"></asp:SqlDataSource>
+        <%--<asp:SqlDataSource ID="SqlDataSource1" runat="server"></asp:SqlDataSource>--%>
     </div>
 </asp:Content>

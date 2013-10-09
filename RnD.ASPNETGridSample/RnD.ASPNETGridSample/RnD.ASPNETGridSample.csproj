@@ -109,7 +109,9 @@
     <Content Include="Scripts\jquery-1.4.1-vsdoc.js" />
     <Content Include="Scripts\jquery-1.4.1.js" />
     <Content Include="Scripts\jquery-1.4.1.min.js" />
-    <Content Include="Web.config" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </Content>
@@ -177,6 +179,8 @@
     <Compile Include="GridViewSample.aspx.designer.cs">
       <DependentUpon>GridViewSample.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Helpers\DynamicReportViewModel.cs" />
+    <Compile Include="Helpers\PropertyInfoHelper.cs" />
     <Compile Include="Models\AppDbContext.cs" />
     <Compile Include="Models\Category.cs" />
     <Compile Include="Models\Product.cs" />
